@@ -10,7 +10,6 @@
     </div>
 </template>
 <script setup lang="ts">
-import { ref } from 'vue'
 
 import Navbar from './Navbar.vue'
 import Inicio from './Inicio.vue';
