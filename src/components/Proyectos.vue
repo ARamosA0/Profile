@@ -1,49 +1,27 @@
 <template>
-    <div class="px-50 my-50">
-        <div class="my-20 flex flex-col gap-5 text-left">
-            <span class="text-text-rpimary font-bold text-5xl">Proyectos Destacados</span>
-            <p class="text-text-secondary">Una seleccion de nuestro tabajo reciente, donde la estrategia y el diseno se encuentran con la tecnologia.</p>
+    <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 my-12">
+        <div class="my-8 flex flex-col gap-3 text-left">
+            <h2 class="text-2xl sm:text-3xl md:text-5xl font-bold text-text-primary">Proyectos Destacados</h2>
+            <p class="text-base text-text-secondary max-w-3xl">Una selección de nuestro trabajo reciente, donde la estrategia y el diseño se encuentran con la tecnología.</p>
         </div>
-        <div class="flex flex-wrap gap-8">
-            <div
-                v-for="p in proyecto"
-                :key="p.title"
-            >
+
+        <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6">
+            <div v-for="p in proyecto" :key="p.title" class="w-full">
                 <Card :img="p.img" :tipo="p.tipo" :title="p.title" />
             </div>
         </div>
     </div>
 </template>
+
 <script setup lang="ts">
 import Card from './reutilizable/Card.vue'
 import { ref } from 'vue'
 
 const proyecto = ref([
-    {
-        img: 'https://picsum.photos/800/600',
-        tipo: 'Sitio Web',
-        title: 'E-commerce de Moda',
-    },
-    {
-        img: 'https://picsum.photos/800/600',
-        tipo: 'Sitio Web',
-        title: 'E-commerce de Moda',
-    },
-    {
-        img: 'https://picsum.photos/800/600',
-        tipo: 'Sitio Web',
-        title: 'E-commerce de Moda',
-    },
-    {
-        img: 'https://picsum.photos/800/600',
-        tipo: 'Sitio Web',
-        title: 'E-commerce de Moda',
-    },
-    {
-        img: 'https://picsum.photos/800/600',
-        tipo: 'Sitio Web',
-        title: 'E-commerce de Moda',
-    }
-
+    { img: 'https://picsum.photos/800/600', tipo: 'Sitio Web', title: 'E-commerce de Moda' },
+    { img: 'https://picsum.photos/800/601', tipo: 'App Web', title: 'Plataforma Educativa' },
+    { img: 'https://picsum.photos/800/602', tipo: 'Sitio Web', title: 'Landing Corporativa' },
+    { img: 'https://picsum.photos/800/603', tipo: 'E-commerce', title: 'Marketplace Local' },
+    { img: 'https://picsum.photos/800/604', tipo: 'PWA', title: 'App de Reservas' }
 ])
-</script>   
+</script>

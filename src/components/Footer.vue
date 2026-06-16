@@ -1,37 +1,48 @@
 <template>
-    <div class="py-10 px-5 my-30">
-        <div class="flex gap-20 justify-around ">
-            <div class="w-50">
-                <h1>NEXUS</h1>
-                <p class="text-text-secondary text-md">Creando el futuro digital, un píxel a la vez. Especialistas en desarrollo web de alto impacto.</p>
+    <footer class="bg-transparent py-8">
+        <div class="max-w-8xl mx-auto px-6 md:px-12 lg:px-20">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 items-start">
+                <div>
+                    <h3 class="text-xl font-bold">NEXUS</h3>
+                    <p class="text-text-secondary mt-2 text-sm">Creando el futuro digital, un píxel a la vez. Especialistas en desarrollo web de alto impacto.</p>
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <span class="text-text-primary font-semibold">Servicios</span>
+                    <a class="text-text-secondary text-sm hover:text-white">Diseño Web</a>
+                    <a class="text-text-secondary text-sm hover:text-white">Desarrollo Frontend</a>
+                    <a class="text-text-secondary text-sm hover:text-white">Desarrollo Backend</a>
+                    <a class="text-text-secondary text-sm hover:text-white">Consultoría SEO</a>
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <span class="text-text-primary font-semibold">Empresa</span>
+                    <a class="text-text-secondary text-sm hover:text-white">Sobre Nosotros</a>
+                    <a class="text-text-secondary text-sm hover:text-white">Casos de Éxito</a>
+                    <a class="text-text-secondary text-sm hover:text-white">Carreras</a>
+                    <a class="text-text-secondary text-sm hover:text-white">Blog</a>
+                </div>
+
+                <div class="flex flex-col gap-2">
+                    <span class="text-text-primary font-semibold">Contacto</span>
+                    <a class="text-text-secondary text-sm">aldoramosaro@gmail.com</a>
+                    <a class="text-text-secondary text-sm">(+51) 991356969</a>
+                    <a class="text-text-secondary text-sm">Arequipa, Peru</a>
+                </div>
             </div>
-            <div class="flex flex-col gap-2">
-                <span class="text-text-primary text-lg font-bold">Servicios</span>
-                <span class="text-text-secondary text-md">Diseño Web</span>
-                <span class="text-text-secondary text-md">Desarrollo Frontend</span>
-                <span class="text-text-secondary text-md">Desarrollo Backend</span>
-                <span class="text-text-secondary text-md">Consultoría SEO</span>
-            </div>
-            <div class="flex flex-col gap-2">
-                <span class="text-text-primary text-lg font-bold">Empresa</span>
-                <span class="text-text-secondary text-md">Sobre Nosotros</span>
-                <span class="text-text-secondary text-md">Casos de Éxito</span>
-                <span class="text-text-secondary text-md">Carreras</span>
-                <span class="text-text-secondary text-md">Blog</span>
-            </div>
-            <div class="flex flex-col gap-2">
-                <span class="text-text-primary text-lg font-bold">Contacto</span>
-                <span class="text-text-secondary text-md">aldoramosaro@gmail.com</span>
-                <span class="text-text-secondary text-md">(+051)991356969</span>
-                <span class="text-text-secondary text-md">Arequipa - Peru</span>
+
+            <div class="mt-8 border-t border-border pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div class="text-text-secondary text-sm">©  NEXUS. Todos los derechos reservados.</div>
+                <div class="flex gap-4">
+                    <a class="text-text-secondary hover:text-white">Twitter</a>
+                    <a class="text-text-secondary hover:text-white">LinkedIn</a>
+                    <a class="text-text-secondary hover:text-white">Instagram</a>
+                </div>
             </div>
         </div>
-
-        <div>
-
-        </div>
-    </div>
+    </footer>
 </template>
+
 <script setup lang="ts">
-import { ref } from 'vue'
-</script>   
+// Footer presentational component — no reactive state required
+</script>

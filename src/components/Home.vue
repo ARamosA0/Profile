@@ -1,11 +1,11 @@
 <template>
     <div>
         <Navbar />
-        <Inicio />
-        <Servicios />
-        <Proyectos />
-        <Trabajo />
-        <Contacto />
+        <Inicio id="inicio"/>
+        <Servicios id="servicios"/>
+        <Proyectos id="proyectos"/>
+        <Trabajo id="trabajo"/>
+        <Contacto id="contacto"/>
         <Footer />
     </div>
 </template>

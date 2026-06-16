@@ -1,33 +1,23 @@
 <template>
-    <div class="px-50 my-50">
-        <section class="text-left flex flex-col gap-5">
-            <span class="text-text-rpimary font-bold text-5xl">Nuestros Servicios</span>
-            <p class="text-lg text-text-secondary">Combinamos diseño estratégico con tecnología de vanguardia para entregar soluciones que no solo se ven bien, sino que funcionan perfectamente.</p>
+    <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 my-12">
+        <section class="text-left flex flex-col gap-3">
+            <h2 class="text-2xl sm:text-3xl md:text-5xl font-bold text-text-primary">Nuestros Servicios</h2>
+            <p class="text-base md:text-lg text-text-secondary max-w-3xl">Combinamos diseño estratégico con tecnología de vanguardia para entregar soluciones que no solo se ven bien, sino que funcionan perfectamente.</p>
         </section>
-        <section class="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mt-15">
+
+        <section class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6">
             <article
                 v-for="serv in servicios"
                 :key="serv.title"
-                class="group rounded-xl border border-border bg-surface p-6
-                    transition-all duration-300
-                    hover:-translate-y-2
-                    hover:border-accent
-                    hover:shadow-[0_12px_24px_var(--accent-glow)]"
+                class="group rounded-xl border border-border bg-surface p-6 transition-all duration-300 hover:-translate-y-2 hover:border-accent hover:shadow-[0_12px_24px_var(--accent-glow)]"
             >
-                <div
-                    class="mb-5 flex h-14 w-14 items-center justify-center rounded-lg
-                        bg-accent/10 text-2xl text-accent"
-                >
+                  <div class="mb-5 flex h-12 w-12 items-center justify-center rounded-lg bg-accent/10 text-xl text-accent">
                     {{ serv.icon }}
-                </div>
+                  </div>
 
-                <h3 class="mb-3 text-xl font-semibold text-text-primary">
-                    {{ serv.title }}
-                </h3>
+                  <h3 class="mb-2 text-lg sm:text-xl font-semibold text-text-primary">{{ serv.title }}</h3>
 
-                <p class="leading-relaxed text-text-secondary">
-                    {{ serv.description }}
-                </p>
+                  <p class="leading-relaxed text-text-secondary text-sm sm:text-base">{{ serv.description }}</p>
             </article>
         </section>
     </div>
