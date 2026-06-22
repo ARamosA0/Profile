@@ -3,7 +3,7 @@
         <div class="max-w-8xl mx-auto px-6 md:px-12 lg:px-20">
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 items-start">
                 <div>
-                    <h3 class="text-xl font-bold">NEXUS</h3>
+                    <h3 class="text-xl font-bold">TIKA</h3>
                     <p class="text-text-secondary mt-2 text-sm">Creando el futuro digital, un píxel a la vez. Especialistas en desarrollo web de alto impacto.</p>
                 </div>
 

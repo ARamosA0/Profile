@@ -63,3 +63,53 @@ body {
     overflow-x: hidden;
 }
 
+/* Custom cursor styles */
+@media (hover: hover) and (pointer: fine) {
+  body { cursor: none; }
+}
+
+.custom-cursor__dot,
+.custom-cursor__ring {
+  position: fixed;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  transform: translate3d(-50%, -50%, 0);
+  z-index: 10000;
+  will-change: transform, opacity;
+}
+
+.custom-cursor__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--accent);
+  box-shadow: 0 0 12px var(--accent-glow);
+  transition: transform 120ms var(--ease-out-expo), background-color 150ms linear;
+}
+
+.custom-cursor__ring {
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  border: 2px solid var(--accent);
+  background: transparent;
+  box-shadow: 0 0 24px var(--accent-glow);
+  transition: transform 220ms var(--ease-out-expo), opacity 220ms var(--ease-out-expo);
+  opacity: 0.95;
+}
+
+/* Hover/active states applied via JS when entering interactive elements */
+.custom-cursor__ring.is-hover {
+  transform: translate3d(-50%, -50%, 0) scale(1.35);
+  opacity: 1;
+}
+.custom-cursor__dot.is-active {
+  transform: translate3d(-50%, -50%, 0) scale(0.85);
+}
+
+@media (hover: none) {
+  .custom-cursor__dot,
+  .custom-cursor__ring { display: none; }
+}
+

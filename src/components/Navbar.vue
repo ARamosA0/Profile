@@ -1,8 +1,10 @@
 <template>
     <div class="fixed top-0 left-0 w-full z-50 bg-bg-surface">
-        <nav class="max-w-7xl mx-auto flex items-center justify-between px-8 py-4">
+        <nav class="max-w-7xl mx-auto flex items-center justify-between px-8">
         <div>
-            <a href="#inicio" class="text-xl font-bold">NEXUS</a>
+            <a href="/" class="text-3xl font-bold">
+                <img src="../assets/logo.png" alt="TIKA Digital" width="150"/>
+            </a>
         </div>
 
         <!-- Desktop links -->
