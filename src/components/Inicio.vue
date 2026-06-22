@@ -1,5 +1,5 @@
 <template>
-    <section class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 my-20">
+    <section class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 my-50">
         <article class="my-5  text-center md:text-left">
             <h1 class="text-3xl sm:text-4xl md:text-6xl lg:text-8xl font-bold leading-tight">
                 Creamos experiencias digitales que

@@ -1,12 +1,12 @@
 <template>
-    <div class="bg-bg-surface py-10">
+    <div class="bg-bg-surface py-15">
         <div class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20">
             <div class="flex flex-col gap-3">
                 <span class="text-2xl sm:text-3xl md:text-5xl font-bold text-text-primary">Cómo Trabajamos</span>
                 <p class="text-base md:text-lg text-text-secondary max-w-3xl">Un proceso estructurado pero flexible, diseñado para entregar resultados excepcionales en cada fase.</p>
             </div>
 
-            <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-8">
+            <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mt-20">
                 <div v-for="p in parts" :key="p.number" class="flex flex-col items-center text-center p-4">
                     <div class="w-14 h-14 flex items-center justify-center rounded-full border border-accent">
                         <span class="text-accent text-xl font-bold">{{ p.number }}</span>
