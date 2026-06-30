@@ -28,7 +28,16 @@
           </div>
 
           <div class="mt-6">
-            <a v-if="project.external" :href="project.external" target="_blank" class="text-accent">Ver sitio</a>
+            <a
+              v-if="project.external"
+              :href="project.external"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center justify-center px-4 py-2 bg-accent text-white rounded-md hover:bg-accent/90 transition"
+            >
+              Visitar proyecto
+            </a>
+            <p v-else class="text-sm text-text-secondary">No hay sitio externo disponible.</p>
           </div>
         </aside>
       </section>
