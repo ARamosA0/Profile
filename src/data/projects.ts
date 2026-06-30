@@ -35,9 +35,9 @@ export const projects: Project[] = [
     shortDescription: 'Landing para campaña GHG con foco en conversión.',
     longDescription:
       'Diseñamos y desarrollamos una landing enfocada en conversión, con optimización de rendimiento, animaciones sutiles y un flujo claro para captación de leads.',
-    role: 'Diseño y Desarrollo Frontend',
-    technologies: ['Vue 3', 'Tailwind', 'Vite'],
-    external: ''
+    role: 'Diseño y Desarrollo FullStack',
+    technologies: ['Astro', 'Tailwind', 'Strapi'],
+    external: 'https://ghg.com.pe/'
   },
   {
     slug: 'gemma-landing',
@@ -48,9 +48,9 @@ export const projects: Project[] = [
     shortDescription: 'Landing visual para presentación de producto.',
     longDescription:
       'Proyecto centrado en la narrativa visual y la presentación del producto, con secciones de características, testimonios y llamadas a la acción escalables.',
-    role: 'Diseño UI / Frontend',
-    technologies: ['Vue 3', 'Animation CSS'],
-    external: ''
+    role: 'Diseño UI / Frontend / Backend',
+    technologies: ['React', 'Next.js', 'Tailwind', 'Node.js', 'Django', 'Flask'],
+    external: 'https://gemmaperu.com/'
   },
   {
     slug: 'territorial-landing',
@@ -62,8 +62,8 @@ export const projects: Project[] = [
     longDescription:
       'Desarrollo de una landing con recursos geográficos, mapas embebidos y materiales descargables, optimizada para accesibilidad y velocidad.',
     role: 'Frontend / Integración',
-    technologies: ['Vue 3', 'Map APIs'],
-    external: ''
+    technologies: ['Astro', 'Tailwind', 'Strapi'],
+    external: 'https://territorialinmobiliaria.com/'
   },
   {
     slug: 'dga-app',
@@ -75,7 +75,7 @@ export const projects: Project[] = [
     longDescription:
       'Aplicación web para administrar procesos internos, con interfaces de datos, filtros avanzados y acceso por roles.',
     role: 'Arquitectura y Frontend',
-    technologies: ['Vue 3', 'REST APIs'],
-    external: ''
+    technologies: ['React', 'REST APIs', 'Node.js', 'Express'],
+    external: 'https://consultoresdga.com/'
   },
 ]
